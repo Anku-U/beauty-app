@@ -1,0 +1,21 @@
+<div class="main_container" style="display: flex; flex-direction: column;">
+  <h1>Beauty App Login</h1>
+    <form [formGroup]="loginForm">
+        <div class="form-group form" style="display: flex; flex-direction: column; margin-bottom: 10px;">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group" style="display: flex; flex-direction: column;  margin-bottom: 10px;">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <input style="text-align: center; align-items: center; height: 40px; width: 60px; margin: 40px 0px 0px 80px;" type="button" class="btn btn-primary" (click)="register()" value="Register"/>
+      </form>
+
+      <!-- <p style="color: red;">{{loginError}}</p> -->
+</div>
